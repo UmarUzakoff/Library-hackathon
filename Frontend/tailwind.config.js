@@ -1,14 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
       colors: {
-        light1: "#FDFDFD",
-        light2: "#F4F4F4",
-        dark1: "#111111",
-        dark2: "#222222",
-        blue: "#2EA8C7",
+        blue1: "#164863",
+        blue2: "#427D9D",
+        blue3: "#9BBEC8",
+        blue4: "#DDF2FD"
       },
       container: {
         center: true,
@@ -18,4 +20,4 @@ module.exports = {
   plugins: [
     require("tailwind-scrollbar"),
   ],
-};
+});
