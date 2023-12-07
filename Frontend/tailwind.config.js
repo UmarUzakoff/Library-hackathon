@@ -16,6 +16,9 @@ module.exports = withMT({
         center: true,
       },
     },
+    fontFamily: {
+      'roboto': ['Roboto Mono'],
+    }
   },
   plugins: [
     require("tailwind-scrollbar"),
