@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import {
-  Navbar,
   MobileNav,
   Button,
   IconButton,
@@ -15,8 +14,8 @@ import authors from "../../../images/authors.svg";
 import genres from "../../../images/genres.svg";
 import search from "../../../images/search.svg";
 import { ThemeApi } from "../../../context/themeContext";
-import Text from "./Text";
 import Form from "./Form";
+import Text from "../../../utils/Text";
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeApi);
@@ -59,10 +58,10 @@ const Header = () => {
   );
 
   return (
-    <Navbar
+    <header
       className={`${
         theme === "dark" ? "bg-blue1" : "bg-blue4"
-      } transition-all rounded-none rounded-b-md mx-auto max-w-screen-3xl px-4 py-2 lg:px-8 lg:py-4`}>
+      } sticky top-0 transition-all rounded-none rounded-b-md mx-auto max-w-screen-3xl px-4 py-2 lg:px-8 lg:py-4`}>
       <div className="container mx-auto flex gap-5 flex-wrap items-center justify-between">
         <a
           href="#"
@@ -229,7 +228,7 @@ const Header = () => {
         handler={handleOpen1}>
         <Form closer={setOpen1} />
       </Dialog>
-    </Navbar>
+    </header>
   );
 };
 
