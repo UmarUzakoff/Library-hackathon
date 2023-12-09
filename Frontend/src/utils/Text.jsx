@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
 import { ThemeApi } from "../context/themeContext";
+import { Link } from "react-router-dom";
 
-const Text = ({ text }) => {
+const Text = ({ text, link }) => {
   const { theme } = useContext(ThemeApi);
 
   return (
-    <a
+    <Link
+      to={link}
       class="group flex items-center transition-all duration-300 ease-in-out"
       href="#">
       <span
@@ -14,7 +16,7 @@ const Text = ({ text }) => {
         } bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out`}>
         {text}
       </span>
-    </a>
+    </Link>
   );
 };
 
