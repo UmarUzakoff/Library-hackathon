@@ -20,14 +20,14 @@ const Form = ({ type, closer }) => {
       <Typography
         variant="h4"
         color="blue-gray"
-        className={`font-roboto mt-2 ${
+        className={`font-montserrat mt-2 ${
           theme === "dark" ? "text-blue4" : "text-blue1"
         }`}>
         {type === "sign in" ? "Shaxsiy kabinetga kirish" : "Ro'yxatdan o'tish"}
       </Typography>
       <Typography
         color="gray"
-        className={`mt-1 font-roboto text-center  ${
+        className={`mt-1 font-montserrat text-center  ${
           theme === "dark" ? "text-blue3" : "text-blue2"
         }`}>
         {type === "sign in"

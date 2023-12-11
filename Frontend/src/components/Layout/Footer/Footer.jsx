@@ -16,7 +16,7 @@ const Footer = () => {
           to={"/"}
           className={`${
             theme === "dark" ? "text-blue4" : "text-blue1"
-          } font-roboto`}>
+          } font-montserrat`}>
           &copy; 2023 Kitoblar Olami
         </Link>
         <ul

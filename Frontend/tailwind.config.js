@@ -18,6 +18,7 @@ module.exports = withMT({
     },
     fontFamily: {
       'roboto': ['Roboto Mono'],
+      'montserrat': ['Montserrat']
     }
   },
   plugins: [

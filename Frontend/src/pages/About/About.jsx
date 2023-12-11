@@ -13,7 +13,7 @@ const About = () => {
           className={`text-center text-xl sm:text-3xl font-semibold ${
             theme === "dark" ? "text-blue4" : "text-blue1"
           }`}>
-          Kitoblar Olami loyihasi haqida
+          "Kitoblar Olami" loyihasi haqida
         </h1>
         <br />
         <div>
