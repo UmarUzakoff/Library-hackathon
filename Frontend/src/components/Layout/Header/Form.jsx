@@ -1,6 +1,7 @@
 import { Card, Input, Button, Typography } from "@material-tailwind/react";
 import { useContext } from "react";
 import { ThemeApi } from "../../../context/themeContext";
+import Text from "../../../utils/Text";
 
 const Form = ({ type, closer }) => {
   const { theme } = useContext(ThemeApi);
@@ -102,6 +103,12 @@ const Form = ({ type, closer }) => {
               className: "before:content-none after:content-none",
             }}
           />
+          <div
+            className={`${type === "sign in" ? "self-end" : "hidden"} ${
+              theme === "dark" ? "text-blue4" : "text-blue2"
+            }`}>
+            <Text text={"Parolni unutdingizmi ?"} />
+          </div>
         </div>
         <Button
           className={`mt-6 ${

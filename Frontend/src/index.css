@@ -13,3 +13,23 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9BBEC8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #164863;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #427D9D;
+}
