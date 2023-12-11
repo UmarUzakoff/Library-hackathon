@@ -2,6 +2,9 @@ import { Typography, Carousel } from "@material-tailwind/react";
 import { useContext } from "react";
 import { ThemeApi } from "../../../context/themeContext";
 import { BookCard } from "./Card";
+import book1 from "../../../images/book1.jpg";
+import book2 from "../../../images/book2.jpg";
+import book3 from "../../../images/book3.jpg";
 
 const TopBooks = () => {
   const { theme } = useContext(ThemeApi);
@@ -21,19 +24,19 @@ const TopBooks = () => {
         </Typography>
         <div className="hidden lg:flex flex-row items-center justify-evenly gap-10">
           <BookCard
-            imgUrl={"https://images.uzum.uz/cjq3p0cvutv2h2ta36t0/original.jpg"}
+            imgUrl={book1}
             rating={5}
             bookName={"Men. Bas qil, ey nafs"}
             author={"Fotih Duman"}
           />
           <BookCard
-            imgUrl={"https://images.uzum.uz/ci226bl6sfhndlbnusd0/original.jpg"}
+            imgUrl={book2}
             rating={5}
             bookName={"Sir. Oshiqlar o'lmas"}
             author={"Fotih Duman"}
           />
           <BookCard
-            imgUrl={"https://images.uzum.uz/ck5enu3k9fq8tdq5gt3g/original.jpg"}
+            imgUrl={book3}
             rating={4}
             bookName={"Lol. Har shaharning o'z egasi bor..."}
             author={"Fotih Duman"}
@@ -47,21 +50,21 @@ const TopBooks = () => {
           autoplay>
           <BookCard
             size={"sm"}
-            imgUrl={"https://images.uzum.uz/cjq3p0cvutv2h2ta36t0/original.jpg"}
+            imgUrl={book1}
             rating={5}
             bookName={"Men. Bas qil, ey nafs"}
             author={"Fotih Duman"}
           />
           <BookCard
             size={"sm"}
-            imgUrl={"https://images.uzum.uz/ci226bl6sfhndlbnusd0/original.jpg"}
+            imgUrl={book2}
             rating={5}
             bookName={"Sir. Oshiqlar o'lmas"}
             author={"Fotih Duman"}
           />
           <BookCard
             size={"sm"}
-            imgUrl={"https://images.uzum.uz/ck5enu3k9fq8tdq5gt3g/original.jpg"}
+            imgUrl={book3}
             rating={4}
             bookName={"Lol. Har shaharning o'z egasi bor..."}
             author={"Fotih Duman"}
