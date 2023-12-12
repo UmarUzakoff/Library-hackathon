@@ -12,7 +12,7 @@ const TopBooks = () => {
   return (
     <section
       className={`sm:py-10 py-5 md:px-0 px-3 ${
-        theme === "dark" ? "bg-blue1 border-blue4" : "bg-blue4 border-blue1"
+        theme === "dark" ? "bg-blue1" : "bg-blue4"
       }`}>
       <div className="container">
         <Typography

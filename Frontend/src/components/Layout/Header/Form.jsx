@@ -72,7 +72,7 @@ const Form = ({ type, closer }) => {
           </Typography>
           <Input
             size="lg"
-            placeholder="name@mail.com"
+            placeholder="name@gmail.com"
             className={`!border-t-blue-gray-200 ${
               theme === "dark"
                 ? "placeholder:text-blue2 text-blue3 focus:!border-blue3"

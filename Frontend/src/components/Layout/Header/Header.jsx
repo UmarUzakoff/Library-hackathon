@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import {
-  MobileNav,
+  Collapse,
   Button,
   IconButton,
   Input,
@@ -156,7 +156,7 @@ const Header = () => {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className="container mx-auto">
           {navList}
           <div className="flex gap-2 justify-between flex-col sm:flex-row">
@@ -210,7 +210,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </MobileNav>
+      </Collapse>
       <Dialog
         className={`flex justify-center items-center ${
           theme === "dark" ? "bg-blue1" : "bg-blue4"

@@ -21,7 +21,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #9BBEC8;
+  background: #9bbec8;
 }
 
 /* Handle */
@@ -31,5 +31,12 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #427D9D;
+  background: #427d9d;
+}
+
+/* //-------------------------------------------------// */
+
+:root {
+  --toastify-color-info: #164863;
+  --toastify-color-success: #427d9d;
 }
