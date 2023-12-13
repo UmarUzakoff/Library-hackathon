@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ThemeApi } from "../../../context/themeContext";
 import { Button } from "@material-tailwind/react";
+import Heading from "../../../utils/Heading";
 
 const Form = () => {
   const { theme } = useContext(ThemeApi);
@@ -60,9 +61,7 @@ const Form = () => {
           theme === "dark" ? "bg-blue1 text-blue4" : "bg-blue4 text-blue1"
         }`}>
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center">
-            Biz bilan bog'laning
-          </h2>
+          <Heading text={"Biz bilan bog'laning"} />
           <p className="mb-8 lg:mb-16 font-light text-center sm:text-xl">
             Texnik muammo bormi? Ilova haqida fikr-mulohazangiz bilan
             ulashmoqchimisiz? Biznes rejamiz haqida batafsil ma'lumot kerakmi?

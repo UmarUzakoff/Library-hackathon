@@ -1,10 +1,14 @@
-import { Typography, Carousel, IconButton } from "@material-tailwind/react";
+import { Carousel, IconButton } from "@material-tailwind/react";
 import { useContext } from "react";
 import { ThemeApi } from "../../../context/themeContext";
 import { BookCard } from "./Card";
 import book1 from "../../../images/book1.jpg";
 import book2 from "../../../images/book2.jpg";
 import book3 from "../../../images/book3.jpg";
+import book4 from "../../../images/book4.jpg";
+import book5 from "../../../images/book5.jpg";
+import book6 from "../../../images/book6.jpg";
+import Heading from "../../../utils/Heading";
 
 const TopBooks = () => {
   const { theme } = useContext(ThemeApi);
@@ -15,14 +19,8 @@ const TopBooks = () => {
         theme === "dark" ? "bg-blue1" : "bg-blue4"
       }`}>
       <div className="container">
-        <Typography
-          variant="h2"
-          className={`${
-            theme === "dark" ? "text-blue4" : "text-blue1"
-          } font-montserrat pb-5 text-xl md:text-4xl`}>
-          Ommabop kitoblar
-        </Typography>
-        <div className="hidden lg:flex flex-row items-center justify-evenly gap-10">
+        <Heading text={"Ommabop kitoblar"} />
+        <div className="hidden lg:flex flex-row flex-wrap items-center justify-evenly gap-10">
           <BookCard
             imgUrl={book1}
             rating={5}
@@ -41,10 +39,28 @@ const TopBooks = () => {
             bookName={"Lol. Har shaharning o'z egasi bor..."}
             author={"Fotih Duman"}
           />
+          <BookCard
+            imgUrl={book4}
+            rating={4}
+            bookName={"Boshimning toji"}
+            author={"Xadicha Kubro Tongar"}
+          />
+          <BookCard
+            imgUrl={book5}
+            rating={5}
+            bookName={"Uyimiz jannatga aylansin"}
+            author={"Ahmet Bulut, Ahmet Akin"}
+          />
+          <BookCard
+            imgUrl={book6}
+            rating={4}
+            bookName={'"Seni sevaman" dema, sev'}
+            author={"Mirach Chag'ri Oqtosh"}
+          />
         </div>
 
         <Carousel
-          className="rounded-xl lg:hidden"
+          className="rounded-xl lg:hidden z-40"
           transition={{ duration: 0.7 }}
           loop
           autoplay
@@ -112,6 +128,27 @@ const TopBooks = () => {
             rating={4}
             bookName={"Lol. Har shaharning o'z egasi bor..."}
             author={"Fotih Duman"}
+          />
+          <BookCard
+            size={"sm"}
+            imgUrl={book4}
+            rating={4}
+            bookName={"Boshimning toji"}
+            author={"Xadicha Kubro Tongar"}
+          />
+          <BookCard
+            size={"sm"}
+            imgUrl={book5}
+            rating={5}
+            bookName={"Uyimiz jannatga aylansin"}
+            author={"Ahmet Bulut, Ahmet Akin"}
+          />
+          <BookCard
+            size={"sm"}
+            imgUrl={book6}
+            rating={4}
+            bookName={'"Seni sevaman" dema, sev'}
+            author={"Mirach Chag'ri Oqtosh"}
           />
         </Carousel>
       </div>
